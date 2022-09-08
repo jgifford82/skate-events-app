@@ -1,0 +1,7 @@
+{
+    "skate events": [
+        {"id": 1, "title": "Jam Skate Lesson"},
+        {"id": 2, "title": "Trail Skate"},
+        {"id": 3, "title": "Roller Disco"}
+    ]
+}
