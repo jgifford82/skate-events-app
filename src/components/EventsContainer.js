@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import EventsList from "./EventsList";
 
 const EventsContainer = () => {
-  const [meets, setMeets] = useState("");
+  const [meets, setMeets] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3004/skate_events")
@@ -11,7 +11,7 @@ const EventsContainer = () => {
       .then((data) => setMeets(data));
   }, []);
 
-  console.log(meets);
+  //   console.log(meets);
 
   return (
     <div>
