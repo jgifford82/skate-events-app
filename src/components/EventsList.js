@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from "react";
 
 const EventsList = () => {
-  return (
-    <div>EventsList</div>
-  )
-}
+  useEffect(() => {
+    fetch("http://localhost:3004/skate_events")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  }, []);
 
-export default EventsList
+  return <div>EventsList Placeholder</div>;
+};
+
+export default EventsList;
