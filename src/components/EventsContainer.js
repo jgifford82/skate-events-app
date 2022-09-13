@@ -15,7 +15,6 @@ const EventsContainer = () => {
 
   return (
     <div>
-      Events!
       <EventsList meets={meets} />
     </div>
   );
