@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 
 const EventsList = ({ meets }) => {
   //   console.log(meets);
-  const renderEvents = meets.map((meet) => <li key={meet.id}>{meet.title}</li>);
+  const renderEvents = meets.map((meet) => <ul key={meet.id}>{meet.title}</ul>);
 
   return (
     <div>
@@ -12,7 +12,7 @@ const EventsList = ({ meets }) => {
         variant="h3"
         component="div"
         sx={{ flexGrow: 1 }}
-        align="left"
+        align="center"
       >
         Events!
       </Typography>
@@ -21,9 +21,20 @@ const EventsList = ({ meets }) => {
         variant="h5"
         component="div"
         sx={{ flexGrow: 1 }}
-        align="left"
+        align="center"
       >
         {renderEvents}
+      </Typography>
+      <Typography
+        variant="h3"
+        component="div"
+        sx={{ flexGrow: 1 }}
+        align="center"
+      >
+        <img
+          src="https://images.pexels.com/photos/7335260/pexels-photo-7335260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="group of roller skaters"
+        ></img>
       </Typography>
     </div>
   );
