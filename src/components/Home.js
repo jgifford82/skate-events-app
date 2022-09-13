@@ -13,7 +13,7 @@ const Home = () => {
         Happy Skating!
         <img
           src="https://images.pexels.com/photos/2005992/pexels-photo-2005992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="group of roller skaters"
+          alt="roller skates"
         ></img>
       </Typography>
     </div>

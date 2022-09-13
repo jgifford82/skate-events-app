@@ -16,6 +16,7 @@ const EventsList = ({ meets }) => {
       >
         Events!
       </Typography>
+      <br></br>
       <Typography
         variant="h5"
         component="div"
