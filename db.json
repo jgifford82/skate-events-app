@@ -1,7 +1,7 @@
 {
     "skate_events": [
-        {"id": 1, "title": "Jam Skate Lesson"},
-        {"id": 2, "title": "Trail Skate"},
-        {"id": 3, "title": "Roller Disco"}
+        {"id": 1, "day": "Mondays", "time": "5-6pm", "title": "Jam Skate Lesson", "location": "Hartmann Inline Rink"},
+        {"id": 2, "day": "Tuesdays", "time": "5-6pm", "title": "Trail Skate", "location": "Boulder Creek Path"},
+        {"id": 3, "day": "Wednesdays", "time": "5-6pm", "title": "Roller Disco", "location": "Hartmann Inline Rink"}
     ]
 }
