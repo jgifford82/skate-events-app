@@ -14,7 +14,16 @@ const EventsList = ({ meets }) => {
         sx={{ flexGrow: 1 }}
         align="center"
       >
-        Events!
+        Events in Boulder!
+      </Typography>
+      <br></br>
+      <Typography
+        variant="h5"
+        component="div"
+        sx={{ flexGrow: 1 }}
+        align="center"
+      >
+        No RSVP needed. Just show up if you can attend!
       </Typography>
       <br></br>
       <Typography
