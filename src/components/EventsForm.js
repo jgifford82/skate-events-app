@@ -1,7 +1,25 @@
 import React from "react";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
 
 const EventsForm = () => {
-  return <div>EventsForm</div>;
+  return (
+    <div>
+      EventsForm
+      <Box
+        component="form"
+        sx={{
+          "& > :not(style)": { m: 1, width: "25ch" },
+        }}
+        noValidate
+        autoComplete="off"
+      >
+        <TextField id="filled-basic" label="Filled" variant="filled" />
+        <TextField id="filled-basic" label="Filled" variant="filled" />
+        <TextField id="filled-basic" label="Filled" variant="filled" />
+      </Box>
+    </div>
+  );
 };
 
 export default EventsForm;
