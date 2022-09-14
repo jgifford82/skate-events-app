@@ -1,10 +1,15 @@
 import React from "react";
 
 const EventsForm = () => {
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log("submitted");
+  }
+
   return (
     <div>
       EventsForm
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>
           Add New Event:
           <input type="text" name="title" placeholder="Event Title" />
