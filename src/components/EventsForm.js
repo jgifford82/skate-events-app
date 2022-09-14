@@ -1,23 +1,19 @@
 import React from "react";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
 
 const EventsForm = () => {
   return (
     <div>
       EventsForm
-      <Box
-        component="form"
-        sx={{
-          "& > :not(style)": { m: 1, width: "25ch" },
-        }}
-        noValidate
-        autoComplete="off"
-      >
-        <TextField id="filled-basic" label="Filled" variant="filled" />
-        <TextField id="filled-basic" label="Filled" variant="filled" />
-        <TextField id="filled-basic" label="Filled" variant="filled" />
-      </Box>
+      <form>
+        <label>
+          Add New Event:
+          <input type="text" name="title" placeholder="Event Title" />
+          <input type="text" name="day" placeholder="Day of the week" />
+          <input type="text" name="time" placeholder="Time frame" />
+          <input type="text" name="location" placeholder="Location" />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
     </div>
   );
 };
