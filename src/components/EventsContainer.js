@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import EventsList from "./EventsList";
+import EventsForm from "./EventsForm";
 
 const EventsContainer = () => {
   const [meets, setMeets] = useState([]);
@@ -15,6 +16,7 @@ const EventsContainer = () => {
 
   return (
     <div>
+      <EventsForm />
       <EventsList meets={meets} />
     </div>
   );
