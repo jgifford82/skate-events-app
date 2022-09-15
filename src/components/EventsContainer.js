@@ -28,6 +28,8 @@ const EventsContainer = () => {
   return (
     <div>
       <EventsForm onAddMeet={handleAddMeet} />
+      <br></br>
+      <br></br>
       <EventsList meets={meets} />
     </div>
   );

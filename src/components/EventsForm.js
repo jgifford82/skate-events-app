@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Typography from "@mui/material/Typography";
 
 const EventsForm = ({ onAddMeet }) => {
   const initialValues = {
@@ -49,41 +50,47 @@ const EventsForm = ({ onAddMeet }) => {
 
   return (
     <div>
-      EventsForm
-      <form onSubmit={handleSubmit}>
-        <label>
-          Add New Event:
-          <input
-            type="text"
-            name="title"
-            placeholder="Event Title"
-            value={values.title}
-            onChange={handleInputChange}
-          />
-          <input
-            type="text"
-            name="day"
-            placeholder="Day of the week"
-            value={values.day}
-            onChange={handleInputChange}
-          />
-          <input
-            type="text"
-            name="time"
-            placeholder="Time frame"
-            value={values.time}
-            onChange={handleInputChange}
-          />
-          <input
-            type="text"
-            name="location"
-            placeholder="Location"
-            value={values.location}
-            onChange={handleInputChange}
-          />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
+      <Typography
+        variant="h6"
+        component="div"
+        sx={{ flexGrow: 1 }}
+        align="center"
+      >
+        <form onSubmit={handleSubmit}>
+          <label>
+            <span style={{ fontWeight: "bold" }}>Add New Event:</span>
+            <input
+              type="text"
+              name="title"
+              placeholder="Event Title"
+              value={values.title}
+              onChange={handleInputChange}
+            />
+            <input
+              type="text"
+              name="day"
+              placeholder="Day of the week"
+              value={values.day}
+              onChange={handleInputChange}
+            />
+            <input
+              type="text"
+              name="time"
+              placeholder="Time frame"
+              value={values.time}
+              onChange={handleInputChange}
+            />
+            <input
+              type="text"
+              name="location"
+              placeholder="Location"
+              value={values.location}
+              onChange={handleInputChange}
+            />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      </Typography>
     </div>
   );
 };

@@ -12,6 +12,7 @@ const Home = () => {
       >
         Happy Skating!
       </Typography>
+      <br></br>
       <Typography
         variant="h3"
         component="div"
