@@ -23,7 +23,7 @@ const About = () => {
       >
         <img
           src="https://images.pexels.com/photos/7335292/pexels-photo-7335292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="group of roller skaters"
+          alt="group of roller skaters sitting"
         ></img>
       </Typography>
     </div>
