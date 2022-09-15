@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const EventsForm = () => {
+const EventsForm = ({ onAddMeet }) => {
   const initialValues = {
     title: "",
     day: "",
@@ -36,7 +36,8 @@ const EventsForm = () => {
       body: JSON.stringify(values),
     })
       .then((r) => r.json())
-      .then((data) => console.log(data));
+      // .then((data) => console.log(data));
+      .then((newMeet) => onAddMeet(newMeet));
 
     // clear input fields on submit by updating values state:
     setValues(initialValues);

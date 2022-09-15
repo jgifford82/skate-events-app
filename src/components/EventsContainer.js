@@ -14,9 +14,14 @@ const EventsContainer = () => {
 
   //   console.log(meets);
 
+  function handleAddMeet(newMeet) {
+    // console.log("In EventsContainer:", newMeet);
+    setMeets([...meets, newMeet]);
+  }
+
   return (
     <div>
-      <EventsForm />
+      <EventsForm onAddMeet={handleAddMeet} />
       <EventsList meets={meets} />
     </div>
   );
