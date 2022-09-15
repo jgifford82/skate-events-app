@@ -9,9 +9,9 @@
 
 ## Server: db.json
 
-- To get the server to run, install it by typing npm install -g json-server in the terminal.
+- To get the server to run, install it by typing `npm install -g json-server` in the terminal.
 
-- Then type the command line to run the server: json-server --watch db.json --port 3004
+- Then type the command line to run the server: `json-server --watch db.json --port 3004`
 
 - When the website is loaded, a fetch request pulls data from db.json, and updates state with that data. State is passed down as a prop to the EventsList component, which maps over the data and renders the events.
 
@@ -44,7 +44,7 @@
    - **Events**
 4. Use a json-server to create a RESTful API for your backend and make both a GET and a POST request to the json server. Use a form to make your post request, specifically a controlled form/component.
 5. Add some styling: you're encouraged to write your CSS from scratch, either by using styled components or writing CSS files and using id/className to style your elements. You can also incorporate a UI framework (like React Bootstrap, Semantic UI, or Material UI) if you prefer.
-   - **Material UI**
+   - **[Material UI](https://mui.com/core/)**
 
 ## Image Resource (free): https://www.pexels.com/
 
