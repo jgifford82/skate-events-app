@@ -1,10 +1,14 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import Typography from "@mui/material/Typography";
 
 const EventsList = ({ meets }) => {
   //   console.log(meets);
-  const renderEvents = meets.map((meet) => <ul key={meet.id}>{meet.title}</ul>);
+  const renderEvents = meets.map((meet) => (
+    <ul key={meet.id}>
+      <span style={{ fontWeight: "bold" }}>{meet.title}</span>: {meet.day}{" "}
+      {meet.time} at {meet.location}
+    </ul>
+  ));
 
   return (
     <div>
@@ -14,7 +18,7 @@ const EventsList = ({ meets }) => {
         sx={{ flexGrow: 1 }}
         align="center"
       >
-        Events in Boulder!
+        <span style={{ fontWeight: "bold" }}>Events in Boulder!</span>
       </Typography>
       <br></br>
       <Typography
@@ -23,7 +27,7 @@ const EventsList = ({ meets }) => {
         sx={{ flexGrow: 1 }}
         align="center"
       >
-        No RSVP needed. Just show up if you can attend!
+        Free! No RSVP needed. Just show up if you can attend!
       </Typography>
       <br></br>
       <Typography

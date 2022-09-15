@@ -8,8 +8,12 @@ const EventsForm = ({ onAddMeet }) => {
     location: "",
   };
 
+  // This state sets the default form input values as an object with empty strings.
   const [values, setValues] = useState(initialValues);
 
+  // This function handles all form inputs with a single onChange handler.
+  // Controlled inputs by destructuring name & value attributes from inputs, then updating state by copying values and updating each value based on the event target.
+  // onChange prop added to each input to call handleInputChange
   const handleInputChange = (e) => {
     //const name = e.target.name
     //const value = e.target.value
