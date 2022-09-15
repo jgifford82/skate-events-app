@@ -19,13 +19,25 @@ const EventsForm = () => {
       ...values,
       [name]: value,
     });
-    console.log(values);
+    // console.log(values);
   };
 
   function handleSubmit(event) {
     // prevent page refresh on submit:
     event.preventDefault();
-    console.log("submitted");
+    // console.log("submitted");
+    // console.log(values);
+
+    fetch("http://localhost:3004/skate_events", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    })
+      .then((r) => r.json())
+      .then((data) => console.log(data));
+
     // clear input fields on submit by updating values state:
     setValues(initialValues);
   }

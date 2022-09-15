@@ -1,7 +1,32 @@
 {
-    "skate_events": [
-        {"id": 1, "day": "Mondays", "time": "5-6pm", "title": "Jam Skate Lesson", "location": "Hartmann Inline Rink"},
-        {"id": 2, "day": "Tuesdays", "time": "5-6pm", "title": "Trail Skate", "location": "Boulder Creek Path"},
-        {"id": 3, "day": "Wednesdays", "time": "5-6pm", "title": "Roller Disco", "location": "Hartmann Inline Rink"}
-    ]
+  "skate_events": [
+    {
+      "id": 1,
+      "day": "Mondays",
+      "time": "5-6pm",
+      "title": "Jam Skate Lesson",
+      "location": "Hartmann Inline Rink"
+    },
+    {
+      "id": 2,
+      "day": "Tuesdays",
+      "time": "5-6pm",
+      "title": "Trail Skate",
+      "location": "Boulder Creek Path"
+    },
+    {
+      "id": 3,
+      "day": "Wednesdays",
+      "time": "5-6pm",
+      "title": "Roller Disco",
+      "location": "Hartmann Inline Rink"
+    },
+    {
+      "title": "rdh",
+      "day": "drhdrht",
+      "time": "aerrgs",
+      "location": "hgufn",
+      "id": 4
+    }
+  ]
 }
