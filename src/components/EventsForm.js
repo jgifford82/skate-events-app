@@ -13,7 +13,7 @@ const EventsForm = ({ onAddMeet }) => {
   const [values, setValues] = useState(initialValues);
 
   // This function handles all form inputs with a single onChange handler.
-  // Controlled inputs by destructuring name & value attributes from inputs, then updating state by copying values and updating each value based on the event target.
+  // Destructured name & value attributes from input fields to reference the key/value pairs when updating state.
   // onChange prop added to each input to call handleInputChange
   const handleInputChange = (e) => {
     //const name = e.target.name
