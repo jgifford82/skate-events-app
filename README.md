@@ -15,16 +15,6 @@
 
 - When the website is loaded, a fetch request pulls data from db.json, and updates state with that data. State is passed down as a prop to the EventsList component, which maps over the data and renders the events.
 
-<!-- ## Blog: -->
-
-<!-- This section needs to be updated when a blog is ready -->
-
-<!-- - For help on setting up a basic fetch request, refer to my [blog](https://dev.to/jgifford82/how-to-make-a-fetch-request-4hlh). -->
-
-<!-- This section needs to be updated when a blog is ready -->
-
-<!-- ## [Video walk-through](https://youtu.be/z1JCUrtSRgk) -->
-
 ## Project requirements met:
 
 1. Make a single page application (only one index.html file) using create-react-app.
