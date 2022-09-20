@@ -20,6 +20,34 @@
       "time": "5-6pm",
       "title": "Roller Disco",
       "location": "Hartmann Inline Rink"
+    },
+    {
+      "title": "Park Skate",
+      "day": "Thursdays",
+      "time": "7-9pm",
+      "location": "Scott Carpenter Park",
+      "id": 4
+    },
+    {
+      "title": "Open Skate",
+      "day": "Fridays",
+      "time": "6-7pm",
+      "location": "Hartmann Inline Rink",
+      "id": 5
+    },
+    {
+      "title": "Beginner Trail Skate",
+      "day": "Saturdays",
+      "time": "10-11am",
+      "location": "EB Rains Park",
+      "id": 6
+    },
+    {
+      "title": "Skate Workout",
+      "day": "Sundays",
+      "time": "4-5pm",
+      "location": "Foothills Rink",
+      "id": 7
     }
   ]
 }
